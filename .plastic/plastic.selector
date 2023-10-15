@@ -1,0 +1,4 @@
+repository "Farming RPG@y_zoe_moliarty@cloud.cn"
+  path "/"
+    br "/main"
+    co "/main"

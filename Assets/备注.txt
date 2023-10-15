@@ -1,0 +1,20 @@
+// 动画
+Animation
+
+// 字体
+Fonts
+
+// 预制体
+Prefabs
+
+// 场景
+Scenes
+
+// 音频
+Sounds
+
+// 贴图
+Sprites
+
+// 瓦片地图
+Tilemap
