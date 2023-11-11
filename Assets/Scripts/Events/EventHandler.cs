@@ -1,3 +1,6 @@
+using System.Collections.Generic;
+using System;
+
 public delegate void MovementDelegate(float inputX, float inputY,
     bool isWalking, bool isRunning, bool isIdle, bool isCarrying,
     ToolEffect toolEffect,
@@ -32,6 +35,18 @@ public static class EventHandler
                 isPickingRight, isPickingLeft, isPickingUp, isPickingDown,
                 isSwingingToolRight, isSwingingToolLeft, isSwingingToolUp, isSwingingToolDown,
                 idleRight, idleLeft, idleUp, idleDown);
+        }
+    }
+
+    // Inventory Updated Event
+    public static event Action<InventoryLocation, List<InventoryItem>> InventoryUpdatedEvent;
+
+    // Inventory Updated Event Call For Publishers
+    public static void CallInventoryUpdatedEvent(InventoryLocation inventoryLocation, List<InventoryItem> inventoryList)
+    {
+        if (InventoryUpdatedEvent != null)
+        {
+            InventoryUpdatedEvent(inventoryLocation, inventoryList);
         }
     }
 }

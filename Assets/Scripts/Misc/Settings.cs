@@ -3,8 +3,12 @@ using UnityEngine;
 public static class Settings
 {
     // Player Movement 
-    public const float runningSpeed = 7.8f; // 5.2
-    public const float walkingSpeed = 5.2f; // 2.6
+    public const float runningSpeed = 5.2f; // 5.2
+    public const float walkingSpeed = 2.6f; // 2.6
+
+    // Inventory
+    public static int playerInitialInventoryCapacity = 24;
+    public static int playerMaximumInventoryCapacity = 48;
 
     // Player Animation Parameters
     public static int inputX; 

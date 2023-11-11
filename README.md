@@ -18,3 +18,12 @@
 ### Add Scenery
 ### Add Cinemachine Confiner
 ### Scenery Fader
+
+## Inventory & Items Part1
+### Item Details Class
+### Scriptable Object Item List
+### Item Class & Commodity Prefabs
+### InventoryManager Class
+### Custom Property Attribute Drawer
+### Create Item Nudge Class
+### Player Item Pickup
